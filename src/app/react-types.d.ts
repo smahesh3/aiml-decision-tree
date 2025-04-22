@@ -1,11 +1,9 @@
 declare namespace React {
-  interface ReactNode {
-    children?: ReactNode | ReactNode[];
-  }
-  
-  interface JSX {
-    interface IntrinsicElements {
-      [elemName: string]: any;
-    }
+  type ReactNode = React.ReactElement | string | number | boolean | null | undefined;
+}
+
+declare namespace JSX {
+  interface IntrinsicElements {
+    [elemName: string]: any;
   }
 }
