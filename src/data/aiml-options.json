@@ -4,38 +4,94 @@
       "id": "root",
       "question": "What is your primary goal with AI/ML?",
       "options": [
-        { "id": "data-analysis", "text": "Data Analysis and Insights", "nextNodeId": "data-analysis" },
-        { "id": "automation", "text": "Automation and Efficiency", "nextNodeId": "automation" },
-        { "id": "prediction", "text": "Prediction and Forecasting", "nextNodeId": "prediction" },
-        { "id": "personalization", "text": "Personalization", "nextNodeId": "personalization" },
-        { "id": "vision", "text": "Computer Vision", "nextNodeId": "vision" },
-        { "id": "nlp", "text": "Natural Language Processing", "nextNodeId": "nlp" }
+        {
+          "id": "data-analysis",
+          "text": "Data Analysis and Insights",
+          "nextNodeId": "data-analysis"
+        },
+        {
+          "id": "automation",
+          "text": "Automation and Efficiency",
+          "nextNodeId": "automation"
+        },
+        {
+          "id": "prediction",
+          "text": "Prediction and Forecasting",
+          "nextNodeId": "prediction"
+        },
+        {
+          "id": "personalization",
+          "text": "Personalization",
+          "nextNodeId": "personalization"
+        },
+        {
+          "id": "vision",
+          "text": "Computer Vision",
+          "nextNodeId": "vision"
+        },
+        {
+          "id": "nlp",
+          "text": "Natural Language Processing",
+          "nextNodeId": "nlp"
+        }
       ]
     },
     {
       "id": "data-analysis",
       "question": "What kind of data analysis do you need?",
       "options": [
-        { "id": "exploratory", "text": "Exploratory Data Analysis", "nextNodeId": "exploratory" },
-        { "id": "pattern", "text": "Pattern Recognition", "nextNodeId": "pattern" },
-        { "id": "segmentation", "text": "Segmentation and Clustering", "nextNodeId": "segmentation" }
+        {
+          "id": "exploratory",
+          "text": "Exploratory Data Analysis",
+          "nextNodeId": "exploratory"
+        },
+        {
+          "id": "pattern",
+          "text": "Pattern Recognition",
+          "nextNodeId": "pattern"
+        },
+        {
+          "id": "segmentation",
+          "text": "Segmentation and Clustering",
+          "nextNodeId": "segmentation"
+        }
       ]
     },
     {
       "id": "exploratory",
       "question": "What is the scale of your data?",
       "options": [
-        { "id": "small-scale", "text": "Small to Medium Scale", "nextNodeId": "small-eda" },
-        { "id": "big-data", "text": "Big Data", "nextNodeId": "big-eda" }
+        {
+          "id": "small-scale",
+          "text": "Small to Medium Scale",
+          "nextNodeId": "small-eda"
+        },
+        {
+          "id": "big-data",
+          "text": "Big Data",
+          "nextNodeId": "big-eda"
+        }
       ]
     },
     {
       "id": "small-eda",
       "question": "What level of expertise do you have?",
       "options": [
-        { "id": "beginner", "text": "Beginner", "nextNodeId": "pandas-solution" },
-        { "id": "intermediate", "text": "Intermediate", "nextNodeId": "r-solution" },
-        { "id": "advanced", "text": "Advanced", "nextNodeId": "python-solution" }
+        {
+          "id": "beginner",
+          "text": "Beginner",
+          "nextNodeId": "pandas-solution"
+        },
+        {
+          "id": "intermediate",
+          "text": "Intermediate",
+          "nextNodeId": "r-solution"
+        },
+        {
+          "id": "advanced",
+          "text": "Advanced",
+          "nextNodeId": "python-solution"
+        }
       ]
     },
     {
@@ -90,9 +146,21 @@
       "id": "automation",
       "question": "What area do you want to automate?",
       "options": [
-        { "id": "business-process", "text": "Business Processes", "nextNodeId": "rpa-solution" },
-        { "id": "decision-making", "text": "Decision Making", "nextNodeId": "decision-automation" },
-        { "id": "customer-service", "text": "Customer Service", "nextNodeId": "chatbot-solution" }
+        {
+          "id": "business-process",
+          "text": "Business Processes",
+          "nextNodeId": "rpa-solution"
+        },
+        {
+          "id": "decision-making",
+          "text": "Decision Making",
+          "nextNodeId": "decision-automation"
+        },
+        {
+          "id": "customer-service",
+          "text": "Customer Service",
+          "nextNodeId": "chatbot-solution"
+        }
       ]
     },
     {
@@ -123,9 +191,21 @@
       "id": "prediction",
       "question": "What type of prediction are you interested in?",
       "options": [
-        { "id": "numerical", "text": "Numerical Prediction", "nextNodeId": "regression-solution" },
-        { "id": "categorical", "text": "Categorical Prediction", "nextNodeId": "classification-solution" },
-        { "id": "time-series", "text": "Time Series Forecasting", "nextNodeId": "time-series-solution" }
+        {
+          "id": "numerical",
+          "text": "Numerical Prediction",
+          "nextNodeId": "regression-solution"
+        },
+        {
+          "id": "categorical",
+          "text": "Categorical Prediction",
+          "nextNodeId": "classification-solution"
+        },
+        {
+          "id": "time-series",
+          "text": "Time Series Forecasting",
+          "nextNodeId": "time-series-solution"
+        }
       ]
     },
     {
@@ -164,9 +244,21 @@
       "id": "vision",
       "question": "What type of vision task do you need?",
       "options": [
-        { "id": "object-detection", "text": "Object Detection", "nextNodeId": "object-detection-solution" },
-        { "id": "image-classification", "text": "Image Classification", "nextNodeId": "image-classification-solution" },
-        { "id": "face-recognition", "text": "Face Recognition", "nextNodeId": "face-recognition-solution" }
+        {
+          "id": "object-detection",
+          "text": "Object Detection",
+          "nextNodeId": "object-detection-solution"
+        },
+        {
+          "id": "image-classification",
+          "text": "Image Classification",
+          "nextNodeId": "image-classification-solution"
+        },
+        {
+          "id": "face-recognition",
+          "text": "Face Recognition",
+          "nextNodeId": "face-recognition-solution"
+        }
       ]
     },
     {
@@ -197,9 +289,21 @@
       "id": "nlp",
       "question": "What Natural Language Processing task do you need?",
       "options": [
-        { "id": "sentiment-analysis", "text": "Sentiment Analysis", "nextNodeId": "sentiment-analysis-solution" },
-        { "id": "text-generation", "text": "Text Generation", "nextNodeId": "text-generation-solution" },
-        { "id": "language-translation", "text": "Language Translation", "nextNodeId": "translation-solution" }
+        {
+          "id": "sentiment-analysis",
+          "text": "Sentiment Analysis",
+          "nextNodeId": "sentiment-analysis-solution"
+        },
+        {
+          "id": "text-generation",
+          "text": "Text Generation",
+          "nextNodeId": "text-generation-solution"
+        },
+        {
+          "id": "language-translation",
+          "text": "Language Translation",
+          "nextNodeId": "translation-solution"
+        }
       ]
     },
     {
@@ -227,4 +331,4 @@
       "description": "Models like T5 or BART can provide high-quality machine translation between different languages."
     }
   ]
-} 
+}
