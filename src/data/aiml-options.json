@@ -6,329 +6,331 @@
       "options": [
         {
           "id": "data-analysis",
-          "text": "Data Analysis and Insights",
+          "text": "Understand and visualize data",
           "nextNodeId": "data-analysis"
         },
         {
-          "id": "automation",
-          "text": "Automation and Efficiency",
-          "nextNodeId": "automation"
-        },
-        {
           "id": "prediction",
-          "text": "Prediction and Forecasting",
+          "text": "Make predictions from data",
           "nextNodeId": "prediction"
         },
         {
-          "id": "personalization",
-          "text": "Personalization",
-          "nextNodeId": "personalization"
+          "id": "automation",
+          "text": "Automate repetitive tasks",
+          "nextNodeId": "automation"
         },
         {
           "id": "vision",
-          "text": "Computer Vision",
+          "text": "Analyze images or video",
           "nextNodeId": "vision"
         },
         {
           "id": "nlp",
-          "text": "Natural Language Processing",
+          "text": "Work with language (text, voice)",
           "nextNodeId": "nlp"
+        },
+        {
+          "id": "agents",
+          "text": "Use AI Agents or Copilots",
+          "nextNodeId": "agents"
+        },
+        {
+          "id": "deployment",
+          "text": "Deploy or monitor ML models",
+          "nextNodeId": "mlops"
+        },
+        {
+          "id": "explainability",
+          "text": "Ensure fairness and interpretability",
+          "nextNodeId": "explainability"
+        },
+        {
+          "id": "rag",
+          "text": "Use Retrieval-Augmented Generation (RAG)",
+          "nextNodeId": "rag"
+        },
+        {
+          "id": "edge",
+          "text": "Deploy AI on edge devices",
+          "nextNodeId": "edge-ai"
         }
       ]
     },
     {
       "id": "data-analysis",
-      "question": "What kind of data analysis do you need?",
-      "options": [
-        {
-          "id": "exploratory",
-          "text": "Exploratory Data Analysis",
-          "nextNodeId": "exploratory"
-        },
-        {
-          "id": "pattern",
-          "text": "Pattern Recognition",
-          "nextNodeId": "pattern"
-        },
-        {
-          "id": "segmentation",
-          "text": "Segmentation and Clustering",
-          "nextNodeId": "segmentation"
-        }
-      ]
-    },
-    {
-      "id": "exploratory",
-      "question": "What is the scale of your data?",
+      "question": "What\u2019s the scale of your data?",
       "options": [
         {
           "id": "small-scale",
           "text": "Small to Medium Scale",
-          "nextNodeId": "small-eda"
+          "nextNodeId": "data-tools-small"
         },
         {
           "id": "big-data",
-          "text": "Big Data",
-          "nextNodeId": "big-eda"
+          "text": "Large Scale / Big Data",
+          "nextNodeId": "data-tools-big"
         }
       ]
     },
     {
-      "id": "small-eda",
-      "question": "What level of expertise do you have?",
+      "id": "data-tools-small",
+      "question": "Do you want interactive visualization dashboards?",
       "options": [
         {
-          "id": "beginner",
-          "text": "Beginner",
-          "nextNodeId": "pandas-solution"
+          "id": "dashboards-yes",
+          "text": "Yes",
+          "nextNodeId": "bi-tools"
         },
         {
-          "id": "intermediate",
-          "text": "Intermediate",
-          "nextNodeId": "r-solution"
-        },
-        {
-          "id": "advanced",
-          "text": "Advanced",
-          "nextNodeId": "python-solution"
+          "id": "dashboards-no",
+          "text": "No",
+          "nextNodeId": "eda-python"
         }
       ]
     },
     {
-      "id": "pandas-solution",
+      "id": "data-tools-big",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "Pandas & Jupyter Notebooks",
-      "description": "Python's Pandas library combined with Jupyter Notebooks provides an accessible way to perform exploratory data analysis with a gentle learning curve."
+      "recommendation": "Apache Spark + Delta Lake + Databricks",
+      "description": "Use distributed computing and collaborative notebooks to process and analyze large-scale datasets."
     },
     {
-      "id": "r-solution",
+      "id": "bi-tools",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "R with RStudio",
-      "description": "R with RStudio offers powerful statistical analysis capabilities with excellent visualization tools like ggplot2."
+      "recommendation": "Power BI or Apache Superset",
+      "description": "These BI tools enable interactive visual dashboards for business data."
     },
     {
-      "id": "python-solution",
+      "id": "eda-python",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "Python Data Science Stack",
-      "description": "Advanced Python libraries including NumPy, Pandas, Matplotlib, Seaborn, and SciPy offer comprehensive data analysis capabilities."
-    },
-    {
-      "id": "big-eda",
-      "isLeaf": true,
-      "question": "Recommended Solution:",
-      "options": [],
-      "recommendation": "Apache Spark with PySpark",
-      "description": "For big data analysis, Apache Spark with PySpark interface provides distributed computing capabilities to handle large datasets efficiently."
-    },
-    {
-      "id": "pattern",
-      "isLeaf": true,
-      "question": "Recommended Solution:",
-      "options": [],
-      "recommendation": "Scikit-learn Pattern Mining",
-      "description": "Scikit-learn offers various algorithms for pattern recognition and association rule mining to discover relationships in your data."
-    },
-    {
-      "id": "segmentation",
-      "isLeaf": true,
-      "question": "Recommended Solution:",
-      "options": [],
-      "recommendation": "K-means Clustering",
-      "description": "K-means and hierarchical clustering algorithms help segment your data into meaningful groups based on similarity."
-    },
-    {
-      "id": "automation",
-      "question": "What area do you want to automate?",
-      "options": [
-        {
-          "id": "business-process",
-          "text": "Business Processes",
-          "nextNodeId": "rpa-solution"
-        },
-        {
-          "id": "decision-making",
-          "text": "Decision Making",
-          "nextNodeId": "decision-automation"
-        },
-        {
-          "id": "customer-service",
-          "text": "Customer Service",
-          "nextNodeId": "chatbot-solution"
-        }
-      ]
-    },
-    {
-      "id": "rpa-solution",
-      "isLeaf": true,
-      "question": "Recommended Solution:",
-      "options": [],
-      "recommendation": "Robotic Process Automation (RPA)",
-      "description": "Tools like UiPath or Automation Anywhere can automate repetitive business processes with minimal coding."
-    },
-    {
-      "id": "decision-automation",
-      "isLeaf": true,
-      "question": "Recommended Solution:",
-      "options": [],
-      "recommendation": "Decision Tree Systems",
-      "description": "Implement decision tree algorithms or rule-based systems to automate complex decision-making processes."
-    },
-    {
-      "id": "chatbot-solution",
-      "isLeaf": true,
-      "question": "Recommended Solution:",
-      "options": [],
-      "recommendation": "Conversational AI Platform",
-      "description": "Platforms like Dialogflow or Microsoft Bot Framework can help build intelligent chatbots to automate customer service."
+      "recommendation": "Pandas, Seaborn, Matplotlib",
+      "description": "Perform detailed exploratory data analysis using Python libraries."
     },
     {
       "id": "prediction",
-      "question": "What type of prediction are you interested in?",
+      "question": "What kind of outcome do you want to predict?",
       "options": [
         {
           "id": "numerical",
-          "text": "Numerical Prediction",
-          "nextNodeId": "regression-solution"
+          "text": "Numeric Values",
+          "nextNodeId": "regression"
         },
         {
           "id": "categorical",
-          "text": "Categorical Prediction",
-          "nextNodeId": "classification-solution"
+          "text": "Categories/Classes",
+          "nextNodeId": "classification"
         },
         {
-          "id": "time-series",
-          "text": "Time Series Forecasting",
-          "nextNodeId": "time-series-solution"
+          "id": "temporal",
+          "text": "Time-based Forecast",
+          "nextNodeId": "time-series"
         }
       ]
     },
     {
-      "id": "regression-solution",
+      "id": "regression",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "Regression Models",
-      "description": "Linear regression, random forest regression, or gradient boosting algorithms can predict numerical values based on your data."
+      "recommendation": "XGBoost, LightGBM, or Linear Regression",
+      "description": "Use ensemble tree-based models or linear models for high-accuracy numeric predictions."
     },
     {
-      "id": "classification-solution",
+      "id": "classification",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "Classification Algorithms",
-      "description": "Algorithms like SVM, Random Forest, or Neural Networks can classify data into categories with high accuracy."
+      "recommendation": "Random Forest, SVM, Neural Networks",
+      "description": "These models are widely used for classifying observations into predefined categories."
     },
     {
-      "id": "time-series-solution",
+      "id": "time-series",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "Time Series Models",
-      "description": "ARIMA, Prophet, or LSTM networks are specialized for time series forecasting and can capture seasonal patterns."
+      "recommendation": "Facebook Prophet, ARIMA, LSTM",
+      "description": "Models designed for forecasting time-dependent patterns in sales, traffic, etc."
     },
     {
-      "id": "personalization",
+      "id": "automation",
+      "question": "What do you want to automate?",
+      "options": [
+        {
+          "id": "workflow",
+          "text": "Business workflow automation",
+          "nextNodeId": "rpa"
+        },
+        {
+          "id": "customer-service",
+          "text": "Customer support/chat",
+          "nextNodeId": "chatbots"
+        },
+        {
+          "id": "document",
+          "text": "Document processing",
+          "nextNodeId": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "rpa",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "Recommendation Systems",
-      "description": "Collaborative filtering, content-based filtering, or hybrid recommendation systems can provide personalized suggestions to users."
+      "recommendation": "UiPath, Automation Anywhere",
+      "description": "Tools that automate structured, rule-based processes using scripts and bots."
+    },
+    {
+      "id": "chatbots",
+      "isLeaf": true,
+      "question": "Recommended Solution:",
+      "options": [],
+      "recommendation": "Dialogflow, Rasa, Microsoft Bot Framework",
+      "description": "Conversational AI platforms to build intelligent chat interfaces."
+    },
+    {
+      "id": "ocr",
+      "isLeaf": true,
+      "question": "Recommended Solution:",
+      "options": [],
+      "recommendation": "Tesseract, Amazon Textract",
+      "description": "OCR engines extract structured text from scanned images and documents."
     },
     {
       "id": "vision",
-      "question": "What type of vision task do you need?",
+      "question": "What is your vision task?",
       "options": [
         {
-          "id": "object-detection",
-          "text": "Object Detection",
-          "nextNodeId": "object-detection-solution"
-        },
-        {
-          "id": "image-classification",
+          "id": "classification",
           "text": "Image Classification",
-          "nextNodeId": "image-classification-solution"
+          "nextNodeId": "cnn"
         },
         {
-          "id": "face-recognition",
+          "id": "detection",
+          "text": "Object Detection",
+          "nextNodeId": "yolo"
+        },
+        {
+          "id": "face",
           "text": "Face Recognition",
-          "nextNodeId": "face-recognition-solution"
+          "nextNodeId": "facenet"
         }
       ]
     },
     {
-      "id": "object-detection-solution",
+      "id": "cnn",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "YOLO or Faster R-CNN",
-      "description": "YOLO (You Only Look Once) or Faster R-CNN are state-of-the-art object detection algorithms that can identify multiple objects in images."
+      "recommendation": "ResNet, VGG, EfficientNet",
+      "description": "Convolutional Neural Networks for high-accuracy image classification."
     },
     {
-      "id": "image-classification-solution",
+      "id": "yolo",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "Convolutional Neural Networks (CNN)",
-      "description": "CNN architectures like ResNet, VGG, or EfficientNet excel at classifying images into categories."
+      "recommendation": "YOLOv8, Faster R-CNN",
+      "description": "State-of-the-art object detection models for bounding box prediction."
     },
     {
-      "id": "face-recognition-solution",
+      "id": "facenet",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "Face Recognition APIs",
-      "description": "APIs like Amazon Rekognition or pre-trained models like FaceNet can be used for accurate face recognition applications."
+      "recommendation": "FaceNet, Amazon Rekognition",
+      "description": "Robust facial recognition using embeddings and similarity search."
     },
     {
       "id": "nlp",
-      "question": "What Natural Language Processing task do you need?",
+      "question": "What kind of language task?",
       "options": [
         {
-          "id": "sentiment-analysis",
-          "text": "Sentiment Analysis",
-          "nextNodeId": "sentiment-analysis-solution"
-        },
-        {
-          "id": "text-generation",
+          "id": "text-gen",
           "text": "Text Generation",
-          "nextNodeId": "text-generation-solution"
+          "nextNodeId": "gpt"
         },
         {
-          "id": "language-translation",
-          "text": "Language Translation",
-          "nextNodeId": "translation-solution"
+          "id": "sentiment",
+          "text": "Sentiment or intent detection",
+          "nextNodeId": "bert"
+        },
+        {
+          "id": "translation",
+          "text": "Translation",
+          "nextNodeId": "t5"
         }
       ]
     },
     {
-      "id": "sentiment-analysis-solution",
+      "id": "gpt",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "BERT for Sentiment Analysis",
-      "description": "Fine-tuned BERT models can provide accurate sentiment analysis of text with contextual understanding."
+      "recommendation": "OpenAI GPT-4, Cohere, Claude",
+      "description": "State-of-the-art generative models for writing, summarization, and Q&A."
     },
     {
-      "id": "text-generation-solution",
+      "id": "bert",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "GPT Models",
-      "description": "GPT-based models are excellent for generating human-like text for various applications."
+      "recommendation": "BERT, RoBERTa, DistilBERT",
+      "description": "Transformer models fine-tuned for sentiment and intent classification."
     },
     {
-      "id": "translation-solution",
+      "id": "t5",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "Transformer-based Translation Models",
-      "description": "Models like T5 or BART can provide high-quality machine translation between different languages."
+      "recommendation": "T5, BART, MarianMT",
+      "description": "Sequence-to-sequence models trained for multilingual translation."
+    },
+    {
+      "id": "rag",
+      "isLeaf": true,
+      "question": "Recommended Solution:",
+      "options": [],
+      "recommendation": "LangChain, Haystack, LlamaIndex",
+      "description": "RAG enables private domain knowledge injection into LLMs using retrieval."
+    },
+    {
+      "id": "agents",
+      "isLeaf": true,
+      "question": "Recommended Solution:",
+      "options": [],
+      "recommendation": "Auto-GPT, LangGraph, CrewAI",
+      "description": "Autonomous agents that use LLMs to execute tasks, access tools, and self-reflect."
+    },
+    {
+      "id": "mlops",
+      "isLeaf": true,
+      "question": "Recommended Solution:",
+      "options": [],
+      "recommendation": "MLflow, Kubeflow, BentoML",
+      "description": "Tools for tracking experiments, model registry, CI/CD pipelines, and monitoring."
+    },
+    {
+      "id": "explainability",
+      "isLeaf": true,
+      "question": "Recommended Solution:",
+      "options": [],
+      "recommendation": "SHAP, LIME, Fairlearn",
+      "description": "Libraries that provide interpretability, fairness checks, and model debugging."
+    },
+    {
+      "id": "edge-ai",
+      "isLeaf": true,
+      "question": "Recommended Solution:",
+      "options": [],
+      "recommendation": "TensorFlow Lite, ONNX Runtime, NVIDIA Jetson",
+      "description": "Frameworks optimized for deploying AI models to low-power edge devices."
     }
   ]
 }
