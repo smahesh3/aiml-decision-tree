@@ -1,8 +1,14 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
-import DecisionTree from './components/DecisionTree';
+import dynamic from 'next/dynamic';
 import Footer from './components/Footer';
+
+// Use dynamic import with ssr: false to prevent server-side rendering
+const DecisionTree = dynamic(
+  () => import('./components/DecisionTree'),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
