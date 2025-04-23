@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { FaShare, FaCheck, FaCopy } from 'react-icons/fa';
 
