@@ -94,7 +94,36 @@
       "question": "Recommended Solution:",
       "options": [],
       "recommendation": "Apache Spark + Delta Lake + Databricks",
-      "description": "Use distributed computing and collaborative notebooks to process and analyze large-scale datasets."
+      "description": "Use distributed computing and collaborative notebooks to process and analyze large-scale datasets.",
+      "skillLevel": "advanced",
+      "pros": [
+        "Excellent performance on large datasets",
+        "Unified analytics platform",
+        "Supports SQL, Python, R, and Scala",
+        "Handles structured and unstructured data"
+      ],
+      "cons": [
+        "Steeper learning curve",
+        "Can be expensive for production deployments",
+        "Overkill for smaller datasets"
+      ],
+      "learningResources": [
+        {
+          "title": "Apache Spark Documentation",
+          "url": "https://spark.apache.org/docs/latest/",
+          "type": "article"
+        },
+        {
+          "title": "Databricks Learning Resources",
+          "url": "https://databricks.com/learn",
+          "type": "course"
+        },
+        {
+          "title": "Spark: The Definitive Guide",
+          "url": "https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/",
+          "type": "article"
+        }
+      ]
     },
     {
       "id": "bi-tools",
@@ -102,7 +131,36 @@
       "question": "Recommended Solution:",
       "options": [],
       "recommendation": "Power BI or Apache Superset",
-      "description": "These BI tools enable interactive visual dashboards for business data."
+      "description": "These BI tools enable interactive visual dashboards for business data.",
+      "skillLevel": "beginner",
+      "pros": [
+        "User-friendly interfaces",
+        "Drag-and-drop functionality",
+        "Extensive visualization options",
+        "Shareable dashboards"
+      ],
+      "cons": [
+        "Limited for advanced statistical analysis",
+        "May require data preparation beforehand",
+        "Some features require paid licenses"
+      ],
+      "learningResources": [
+        {
+          "title": "Microsoft Power BI Documentation",
+          "url": "https://docs.microsoft.com/en-us/power-bi/",
+          "type": "article"
+        },
+        {
+          "title": "Power BI Tutorial for Beginners",
+          "url": "https://www.youtube.com/watch?v=AGrl-H87pRU",
+          "type": "video"
+        },
+        {
+          "title": "Apache Superset Documentation",
+          "url": "https://superset.apache.org/docs/intro",
+          "type": "article"
+        }
+      ]
     },
     {
       "id": "eda-python",
@@ -249,35 +307,78 @@
     },
     {
       "id": "nlp",
-      "question": "What kind of language task?",
+      "question": "What is your language processing goal?",
       "options": [
         {
-          "id": "text-gen",
-          "text": "Text Generation",
-          "nextNodeId": "gpt"
+          "id": "text-classification",
+          "text": "Classify text into categories",
+          "nextNodeId": "text-classification"
         },
         {
-          "id": "sentiment",
-          "text": "Sentiment or intent detection",
-          "nextNodeId": "bert"
+          "id": "text-generation",
+          "text": "Generate or modify text content",
+          "nextNodeId": "text-generation"
+        },
+        {
+          "id": "sentiment-analysis",
+          "text": "Analyze sentiment or emotion",
+          "nextNodeId": "sentiment-analysis"
         },
         {
           "id": "translation",
-          "text": "Translation",
-          "nextNodeId": "t5"
+          "text": "Translate between languages",
+          "nextNodeId": "translation"
         }
       ]
     },
     {
-      "id": "gpt",
+      "id": "text-classification",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "OpenAI GPT-4, Cohere, Claude",
-      "description": "State-of-the-art generative models for writing, summarization, and Q&A."
+      "recommendation": "Transformer-based models (BERT, RoBERTa)",
+      "description": "These pre-trained language models achieve state-of-the-art results on text classification tasks.",
+      "skillLevel": "intermediate",
+      "pros": [
+        "Highly accurate for most classification tasks",
+        "Can be fine-tuned with smaller datasets",
+        "Strong contextual understanding",
+        "Available in many languages"
+      ],
+      "cons": [
+        "Computationally intensive",
+        "Requires GPU for efficient training",
+        "Model size can be large",
+        "May need domain adaptation for specialized fields"
+      ],
+      "learningResources": [
+        {
+          "title": "HuggingFace Transformers Documentation",
+          "url": "https://huggingface.co/docs/transformers/index",
+          "type": "article"
+        },
+        {
+          "title": "Fine-tuning BERT for Text Classification",
+          "url": "https://www.tensorflow.org/text/tutorials/classify_text_with_bert",
+          "type": "article"
+        },
+        {
+          "title": "NLP with Transformers Course",
+          "url": "https://www.coursera.org/learn/transformer-models-in-nlp",
+          "type": "course"
+        }
+      ]
     },
     {
-      "id": "bert",
+      "id": "text-generation",
+      "isLeaf": true,
+      "question": "Recommended Solution:",
+      "options": [],
+      "recommendation": "GPT-3, GPT-4, Cohere",
+      "description": "Generative models for text generation and content creation."
+    },
+    {
+      "id": "sentiment-analysis",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
@@ -285,11 +386,11 @@
       "description": "Transformer models fine-tuned for sentiment and intent classification."
     },
     {
-      "id": "t5",
+      "id": "translation",
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "T5, BART, MarianMT",
+      "recommendation": "Transformer-based models (mT5, MarianMT)",
       "description": "Sequence-to-sequence models trained for multilingual translation."
     },
     {
@@ -329,8 +430,38 @@
       "isLeaf": true,
       "question": "Recommended Solution:",
       "options": [],
-      "recommendation": "TensorFlow Lite, ONNX Runtime, NVIDIA Jetson",
-      "description": "Frameworks optimized for deploying AI models to low-power edge devices."
+      "recommendation": "TensorFlow Lite or ONNX Runtime",
+      "description": "Frameworks for deploying lightweight models on edge devices like phones, IoT devices, or embedded systems.",
+      "skillLevel": "advanced",
+      "pros": [
+        "Models run directly on device",
+        "No internet connection needed",
+        "Better privacy (data stays on device)",
+        "Lower latency for real-time applications"
+      ],
+      "cons": [
+        "Limited computational resources",
+        "Need to optimize model size",
+        "Hardware constraints may limit model complexity",
+        "Deployment can be complicated across different devices"
+      ],
+      "learningResources": [
+        {
+          "title": "TensorFlow Lite Guide",
+          "url": "https://www.tensorflow.org/lite/guide",
+          "type": "article"
+        },
+        {
+          "title": "Edge AI with TensorFlow Lite",
+          "url": "https://www.youtube.com/watch?v=8JgC6TM1i_0",
+          "type": "video"
+        },
+        {
+          "title": "ONNX Runtime Documentation",
+          "url": "https://onnxruntime.ai/docs/",
+          "type": "article"
+        }
+      ]
     }
   ]
 }
